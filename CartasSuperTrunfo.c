@@ -14,6 +14,15 @@ int main() {
   float pib;
   int turismo;
 
+  // variáveis da segunda carta
+  char estado2[20];
+  char codigo2[5];
+  char cidade2[20];
+  int populacao2;
+  float area2;
+  float pib2;
+  int turismo2;
+
 
 printf("Bem vindo(a) ao jogo Super-Trunfo. Vamos iniciar coletando dados de suas cartas. \n");
 
@@ -48,25 +57,25 @@ printf("\n");
 printf("Agora vamos cadastrar os dados da sua segunda carta. \n");
 
 printf("Estado da carta 2:\n");
-scanf(" %s", estado);
+scanf("%s", estado2);
 
 printf("Código da carta 2:\n");
-scanf("%s", codigo);
+scanf("%s", codigo2);
 
 printf("Nome da cidade carta 2:\n");
-scanf("%s", cidade);
+scanf("%s", cidade2);
 
 printf("População total carta 2:\n");
-scanf("%d", &populacao);
+scanf("%d", &populacao2);
 
 printf("Tamanho da área em Km² carta 2:\n");
-scanf("%f", &area);
+scanf("%f", &area2);
 
 printf("Produto Interno Bruto - PIB carta 2:\n");
-scanf("%f", &pib);
+scanf("%f", &pib2);
 
 printf("Quantidade de pontos turísticos carta 2:\n");
-scanf("%d", &turismo);
+scanf("%d", &turismo2);
 printf("\n\n");
 
 printf("Carta 1: \n Estado: %s \n Código: %s \n Nome da Cidade: %s \n", estado, codigo, cidade);
@@ -74,8 +83,8 @@ printf(" População: %d \n Área: %f \n PIB: %f bilhões \n Número de pontos t
 
 printf("\n");
 
-printf("Carta 2: \n Estado: %s \n Código: %s \n Nome da Cidade: %s \n", estado, codigo, cidade);
-printf(" População: %d \n Área: %f \n PIB: %f bilhões \n Número de pontos turísticos: %d \n", populacao, area, pib, turismo);
+printf("Carta 2: \n Estado: %s \n Código: %s \n Nome da Cidade: %s \n", estado2, codigo2, cidade2);
+printf(" População: %d \n Área: %f \n PIB: %f bilhões \n Número de pontos turísticos: %d \n", populacao2, area2, pib2, turismo2);
 
 return 0;
 } 
